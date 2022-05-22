@@ -1,0 +1,30 @@
+@mixin btn-class($class-name: '.btn', $property: 'color', $color: red) {
+  #{$class-name} {
+    #{$property}: $color;
+  }
+}
+
+@include btn-class('.btn-primary', 'color', purple);
+@include btn-class('.btn-secondary', 'color', blue);
+@include btn-class('.btn-inverted', 'background-color', transparent);
+@include btn-class('.btn-inverted-light', 'background-color', lightgray);
+@include btn-class('.btn-tertiary', 'color', green);
+
+// .btn-text-gray {  color: gray;}
+$class-name: '.btn-text-gray';
+
+#{'.btn-inverted'} {
+  background-color: transparent;
+}
+
+#{'.btn-text-gray'} {
+  color: gray;
+}
+
+#{'.btn-inverted' + '.btn-text-gray'} {
+  color: gray;
+}
+
+@include btn-class('.btn-text-gray', 'color', gray);
+
+// arata 5 din 6, spune ca Butonul cu clasa ".btn-text-gray" trebuie sa aiba si clasa "btn-inverted" dar nu am detectat-o.

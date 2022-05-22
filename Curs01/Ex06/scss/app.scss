@@ -1,0 +1,91 @@
+@mixin square() {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: turquoise;
+}
+
+@mixin square-bg($color: red) {
+  background-color: $color;
+}
+
+.squares {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.square {
+  @include square();
+}
+
+.square-magenta {
+  @include square-bg(magenta);
+}
+
+.square-peru {
+  @include square-bg(peru);
+}
+
+.square-purple {
+  @include square-bg(purple);
+}
+
+@mixin circle() {
+  width: 200px;
+  height: 200px;
+  border: 3px solid red;
+  border-radius: 50%;
+  background-color: purple;
+}
+
+@mixin circle-bg($color: purple) {
+  background-color: $color;
+}
+
+.circles {
+  width: 75%;
+  border: 2px dotted brown;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  @include circle();
+}
+
+.circle-red {
+  @include circle-bg(red);
+}
+
+.circle-green {
+  @include circle-bg(green);
+}
+
+.circle-blue {
+  @include circle-bg(blue);
+}
+
+@mixin circle-border($color: solid blue) {
+  border: $color;
+}
+
+.circle-border-blue {
+  border: 3px solid blue;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.circle-red {
+  @include circle-border(blue);
+}
+
+// asa arata bine desi am 12din13 si spune ca "Nu ai adaugat clasa circle-border-blue pe primul div
+// daca pun cum vrea pixellab sunt afectate toate cercurile.

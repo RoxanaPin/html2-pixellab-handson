@@ -1,0 +1,63 @@
+$brand-magenta: magenta;
+$brand-pink: pink;
+$brand-coral: lightcoral;
+
+$brand-red: red;
+$brand-purple: purple;
+$brand-green: green;
+
+ul {
+  a {
+    &:hover {
+      text-decoration: none;
+      color: $brand-red;
+    }
+
+    &:active {
+      color: $brand-purple;
+    }
+
+    &:visited {
+      color: $brand-green;
+    }
+  }
+}
+
+.para {
+  padding: 10px 20px;
+}
+
+.para-short {
+  width: 50%;
+  margin: 0 auto;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+.reverse .para {
+  width: 50%;
+  padding: 0;
+}
+
+.reverse .para-short {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+ol a:hover {
+  color: $brand-magenta;
+}
+
+ol a:active {
+  color: $brand-pink;
+}
+
+ol a:visited {
+  color: $brand-coral;
+}
+
+.all-visited a {
+  text-decoration: line-through;
+}
