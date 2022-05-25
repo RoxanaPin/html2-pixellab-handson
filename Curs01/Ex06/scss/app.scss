@@ -83,9 +83,6 @@
   border-radius: 50%;
 }
 
-.circle-red {
+.circle.circle-red {
   @include circle-border(blue);
 }
-
-// asa arata bine desi am 12din13 si spune ca "Nu ai adaugat clasa circle-border-blue pe primul div
-// daca pun cum vrea pixellab sunt afectate toate cercurile.

@@ -63,7 +63,7 @@
   border-radius: 50%;
 }
 
-.circle-red {
+.circle.circle-red {
   border: blue;
 }
 

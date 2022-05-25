@@ -3,3 +3,19 @@
   justify-content: space-between;
   margin: 16px 0;
 }
+
+$colors: (
+  'main': red,
+  'primary': blue,
+  'secondary': green,
+  'tertiary': yellow,
+  'neutral': gray,
+);
+
+@each $name, $color in $colors {
+  .btn-#{$name} {
+    color: $color;
+  }
+}
+
+// ex 3 si 4 mai am

@@ -1,0 +1,42 @@
+@keyframes animation-03 {
+  0% {
+    background-color: blue;
+    width: 100%;
+  }
+
+  33.3% {
+    background-color: yellow;
+    width: 75%;
+  }
+
+  66.6% {
+    background-color: red;
+    width: 200px;
+  }
+
+  100% {
+    background-color: blue;
+    width: 5px;
+  }
+}
+/* cele 4 cadre 0, 33.3, 66.6, 100 */
+
+.bar-03 {
+  animation: animation-03 12s ease-in;
+  /* animation-fill-mode: forwards; */
+}
+/* cand e la 33 sec din 12 sec are yellow si latimea de 75% */
+
+@keyframes animation-06 {
+  from {
+    width: 200px;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.bar-06 {
+animation: animation-06 4s ease-in forwards;
+}

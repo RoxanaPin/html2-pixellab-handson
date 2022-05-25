@@ -1,0 +1,121 @@
+.line {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #000;
+}
+
+.box-01 {
+  border-width: 1px;
+}
+
+.box-02 {
+  border-width: 2px;
+}
+
+.box-03 {
+  border-width: 3px;
+}
+
+.box-04 {
+  border-width: 4px;
+}
+
+.box-05 {
+  border-width: 5px;
+}
+
+.box-06 {
+  border-width: 6px;
+}
+
+.box-07 {
+  border-width: 7px;
+}
+
+.box-08 {
+  border-width: 8px;
+}
+
+.box-09 {
+  border-width: 9px;
+}
+
+.box-1 {
+  background-color: gray;
+}
+
+.box-1 {
+  border: dotted purple;
+}
+
+.box-2 {
+  background-color: gray;
+}
+
+.box-2 {
+  border: dotted purple;
+}
+
+.box-3 {
+  background-color: gray;
+}
+
+.box-3 {
+  border: dotted purple;
+}
+
+.box-4 {
+  background-color: gray;
+}
+
+.box-4 {
+  border: dotted purple;
+}
+
+.box-5 {
+  background-color: gray;
+}
+
+.box-5 {
+  border: dotted purple;
+}
+
+.box-6 {
+  background-color: gray;
+}
+
+.box-6 {
+  border: dotted purple;
+}
+
+.box-7 {
+  background-color: gray;
+}
+
+.box-7 {
+  border: dotted purple;
+}
+
+.box-8 {
+  background-color: gray;
+}
+
+.box-8 {
+  border: dotted purple;
+}
+
+.box-9 {
+  background-color: gray;
+}
+
+.box-9 {
+  border: dotted purple;
+}
+
+/*# sourceMappingURL=style.css.map */

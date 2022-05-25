@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+@keyframes animate {
+  33.3% {
+    /* translate(x, y) */
+transform: translate(0, calc(100vh - 100px));
+  }
+  /* vh = view port height */
+
+  66.6% {
+    transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+
+  }
+/* 100vw = width = maxim dreapta */
+/* 100vh = maxim jos dar e minus -100px pt ca originea cutiei e in coltul dr sus si nu s-ar mai fi avzut deloc cand cobora in jos, am scazut 100px cat e dimensiunea ei ca sa se vada stand in colutl de jos */
+
+  100% {
+
+  }
+}
+
+.box-animate {
+animation: animate 10s ease-out;
+}
+
+/* ex2: o sa am 4 transformuri pt cele 5 sageti
+daca vreau de la 66 sa se duca in sus pun valoarea 0 pe parametrul y */
+/* calc este o functie */
