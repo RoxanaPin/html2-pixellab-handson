@@ -18,4 +18,14 @@ $colors: (
   }
 }
 
-// ex 3 si 4 mai am
+@each $name, $color in $colors {
+  .btn-bg-#{$name} {
+    background-color: $color;
+  }
+}
+
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color;
+  }
+}

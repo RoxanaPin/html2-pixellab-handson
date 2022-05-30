@@ -24,8 +24,22 @@ $margins: (
   'md': 16px,
   'lg': 32px,
 );
+
 @each $size, $value in $margins {
-  .m#{$size} {
+  .m-#{$size} {
     margin: $value;
+  }
+}
+
+$padding: (
+  'xs': 4px,
+  'sm': 8px,
+  'md': 16px,
+  'lg': 32px,
+);
+
+@each $size, $value in $margins {
+  .p-#{$size} {
+    padding: $value;
   }
 }
