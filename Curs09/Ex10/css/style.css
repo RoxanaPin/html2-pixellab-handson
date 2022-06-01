@@ -55,3 +55,35 @@
 .flex-container-03 :nth-last-child(2) {
   order: 1;
 }
+
+.flex-container-01 {
+  flex-direction: row-reverse;
+}
+
+.flex-container-01 :nth-last-of-type(4) {
+  order: 1;
+}
+
+.flex-container-04 :nth-of-type(3) {
+  order: -1;
+}
+
+.flex-container-04 :nth-of-type(4) {
+  order: 1;
+}
+
+.flex-container-05 {
+  flex-direction: row-reverse;
+}
+
+.flex-container-05 :nth-of-type(2) {
+  order: 1;
+}
+
+.flex-container-05 :nth-last-child(2) {
+  order: -2;
+}
+
+.flex-container-06 :nth-of-type(3) {
+  order: -1;
+}
